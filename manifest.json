@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Ajouter Prof. absent",
+    "version": "1.0",
+    "description": "Ajoute une étiquette 'Prof. absent' à la page Pronote et modifie toutes les notes.",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://*.index-education.net/pronote/eleve.html*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
